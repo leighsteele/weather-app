@@ -200,7 +200,7 @@ export default function WeatherPage() {
 
         <div className={classes.currentConditions}>
           <Typography variant="h6">{currentConditions.WeatherText}</Typography>
-          <Typography variant="h2">{currentConditions.Temperature?.Metric?.Value}°C</Typography>
+          <Typography variant="h2">{Math.round(currentConditions.Temperature?.Metric?.Value)}°C</Typography>
         </div>
 
         <div className={classes.scrollContainer}>

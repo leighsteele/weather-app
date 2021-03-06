@@ -41,10 +41,10 @@ export default function ForecastCard({ icon, day, temperature }) {
 
         <div className={classes.container}>
           <Typography variant="subtitle1" className={classes.margin}>
-            {temperature.Maximum.Value}°
+            {Math.round(temperature.Maximum.Value)}°
             </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            {temperature.Minimum.Value}°
+            {Math.round(temperature.Minimum.Value)}°
             </Typography>
         </div>
       </CardContent>

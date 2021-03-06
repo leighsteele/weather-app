@@ -59,7 +59,7 @@ export default function FavoriteCard({ city, setErrorMessage }) {
             {currentConditions.WeatherText}
           </Typography>
           <Typography component="h5" variant="h5">
-            {currentConditions?.Temperature?.Metric.Value}°C
+            {Math.round(currentConditions?.Temperature?.Metric.Value)}°C
           </Typography>
         </div>
       </div>
